@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Clay Creations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo-placeholder">
+            <!-- Logo will go here -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#" id="cart-status">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        
+        <div id="contact-info">
+            <h2>Our Details</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Clay Street, Art Town, USA</p>
+            <!-- You can add more contact details or a short message here -->
+        </div>
+
+        <div id="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post"> <!-- The action attribute will need to be updated for a functional form -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+            <!-- This is a basic HTML form. For functionality, backend processing is required. -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Clay Creations</p>
+    </footer>
+</body>
+</html>

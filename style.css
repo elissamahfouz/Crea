@@ -1,0 +1,115 @@
+/* General Styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #f0f0f0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5em 1em;
+}
+
+/* Hero Section (index.html) */
+#hero {
+    height: 60vh;
+    background-color: #ddd; /* Placeholder background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#business-name h1 { /* Targeting the h1 within #business-name */
+    font-size: 3em;
+    color: #fff; /* This might need to change based on the actual hero background */
+}
+
+/* Featured Products and Client Reviews (index.html) */
+section {
+    padding: 2em;
+}
+
+#featured-products div, #client-reviews div { /* Basic card styling */
+    border: 1px solid #eee;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #fff;
+}
+
+/* Product List (products.html) */
+#product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center; /* Center items if they don't fill the row */
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 1em;
+    width: calc(33.333% - 2em); /* Adjust for gap, assuming 3 items per row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 1em; /* Add some space between rows */
+}
+
+.product-item img { /* Applied to images within .product-item */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+    margin-bottom: 0.5em;
+}
+
+/* Forms (contact.html) */
+#contact-form-section form div {
+    margin-bottom: 1em;
+}
+
+#contact-form-section label {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+#contact-form-section input[type="text"],
+#contact-form-section input[type="email"],
+#contact-form-section textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#contact-form-section button[type="submit"] {
+    padding: 0.7em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em; /* Add some space above the footer */
+}
